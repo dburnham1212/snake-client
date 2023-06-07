@@ -13,9 +13,9 @@ const connect = function () {
   conn.on('connect', () => {
     console.log("Successfully connected to the game server");
     conn.write("Name: ABC");// send name to server
-    setInterval(() => {
-      conn.write("Move: up");// send movement to server
-    }, 50);
+    // setInterval(() => {
+    //   conn.write("Move: up");// send movement to server
+    // }, 50);
   });
   
   //Handles incoming data and logs it for the player
